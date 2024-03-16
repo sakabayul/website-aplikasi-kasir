@@ -37,7 +37,7 @@ closeCart.addEventListener("click", function(){
 let products = [
     {
         id: 1,
-        img: "chitato.png",
+        img: "Chitato.png",
         name: "Chitato(250g)",
         price: 10000
     },
@@ -45,55 +45,55 @@ let products = [
         id: 2,
         img: "Coca-cola.png",
         name: "Coca-cola(450ml)",
-        price: 10000
+        price: 7000
     },
     {
         id: 3,
         img: "Fanta.png",
         name: "Fanta(450ml)",
-        price: 10000
+        price: 7000
     },
     {
         id: 4,
         img: "Sprite.png",
         name: "Sprite(450ml)",
-        price: 10000
+        price: 7000
     },
     {
         id: 5,
         img: "Aqua.png",
         name: "Aqua(600ml)",
-        price: 10000
+        price: 3500
     },
     {
         id: 6,
         img: "Chuba.png",
         name: "Chuba(250g)",
-        price: 10000
+        price: 8000
     },
     {
         id: 7,
         img: "Chuba 2.png",
         name: "Chuba(250g)",
-        price: 10000
+        price: 8000
     },
     {
         id: 8,
         img: "Taro.png",
         name: "Taro(250g)",
-        price: 10000
+        price: 9000
     },
     {
         id: 9,
         img: "Good Time.png",
         name: "Good Time(450g)",
-        price: 10000
+        price: 8000
     },
     {
         id: 10,
         img: "Milkita.png",
         name: "Milkita(30pcs)",
-        price: 10000
+        price: 18000
     }
 ];
 let kasirItems  = [];
