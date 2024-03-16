@@ -1,3 +1,9 @@
-# website-aplikasi-kasir
+# Website Aplikasi Kasir
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/sakabayul/website-aplikasi-kasir)
+Design UI/UX By: Saka Bayu <br>
+Web Development By: Saka Bayu
+<br>
+<br>
+Contact me: <br>
+Linkedin: https://www.linkedin.com/in/saka-bayu-l <br>
+GitHub: https://github.com/sakabayul

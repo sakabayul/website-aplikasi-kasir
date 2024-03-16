@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --background-blue: rgb(80, 176, 255);
+    --font-white: rgb(255, 255, 255);
+}
+html{
+    font-size: 100%;
+}
+body{
+    height: 100vh;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    width: 100%;
+    height: 35px;
+    color: white;
+    border-radius: 7px;
+    background-color: red;
+    cursor: pointer;
+}
+.btn-icon{
+    width: 20px;
+    height: 20px;
+    color: var(--font-white);
+    border: 1px solid var(--font-white);
+    cursor: pointer;
+    background-color: transparent;
+}
+.hidden {
+    display: none;
+}
+
+
+nav{
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    color: var(--font-white);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--background-blue);
+}
+nav button{
+    padding: 0 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+
+#menu{
+    display: none;
+}
+aside#menu{
+    min-width: 200px;
+    margin-top: 20px;
+    height: 380px;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: var(--background-blue);
+}
+aside#menu h2{
+    padding: 20px;
+}
+aside#menu ul{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 20px;
+    gap: 20px;
+}
+aside#menu ul li:nth-child(5){
+    margin-top: 20px;
+}
+aside#menu ul li a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0px 0% 0px 10px;
+    color: white;
+}
+aside#menu ul li i{
+    width: 40px;
+}
+
+
+/* Container Main */
+main{
+    padding: 20px 40px;
+    width: 100%;
+}
+section.kasir{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+section.kasir .card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 0 1 auto;
+    width: 190px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border: .5px solid var(--background-blue);
+    border-radius: 10px;
+    padding: 20px;
+}
+section.kasir .card .deskripsi{
+    text-align: center;
+}
+section.kasir .card .deskripsi h2{
+    font-size: 1rem;
+}
+section.kasir .card .image{
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+section.kasir .card .image img{
+    height: 100%;
+    filter: drop-shadow(3px 2px 5px rgba(0, 0, 0, 0.5));
+    object-fit: cover;
+}
+
+
+
+#cart{
+    display: none;
+}
+aside.cart{
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    min-width: 460px;
+    height: 520px;
+    gap: 10px;
+    color: white;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: var(--background-blue);
+}
+aside#cart .cart-item ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 370px;
+    overflow: auto;
+    gap: 15px;
+}
+aside#cart .cart-item ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+aside#cart .cart-item ul li .nama-product{
+    width: 160px;
+}
+aside#cart .cart-item ul li .harga-product{
+    width: 100px;
+}
+aside#cart .cart-item ul li .image{
+    text-align: center;
+    width: 50px;
+}
+aside#cart .cart-item ul li img{
+    width: auto;
+    height: 70px;
+    object-fit: cover;
+}
+aside#cart .informasi p{
+    margin-bottom: 10px;
+}
+aside#cart .informasi .buttons{
+    display: flex;
+    gap: 20px;
+}
+aside#cart .informasi .buttons button:nth-child(2){
+    color: black;
+    background-color: var(--font-white);
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1080px) {
+    html{
+        font-size: 90%;
+    }
+    section.kasir .card{
+        width: 180px;
+    }
+    aside.cart{
+        min-width: 400px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    aside.cart{
+        min-width: 90%;
+    }
+}

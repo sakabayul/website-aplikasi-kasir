@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kasir</title>
+
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+        <button id="toggleMenu"><i class="fa-solid fa-bars"></i></button>
+        <h2>TOKO SUKA MAJU</h2>
+        <button id="toggleCart"><i class="fa-solid fa-cart-shopping"></i><span class="quantity"></span></button>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+    <div class="container">
+        <aside id="menu">
+            <h2>Toko Suka Maju</h2>
+            <ul>
+                <li><a href=""><i class="fa-solid fa-house"></i>Beranda</a></li>
+                <li><a href=""><i class="fa-solid fa-clipboard-list"></i>Kasir</a></li>
+                <li><a href=""><i class="fa-solid fa-boxes-stacked"></i>Produk</a></li>
+                <li><a href=""><i class="fa-solid fa-book"></i>Transaksi</a></li>
+                <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Keluar</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <h2>Kasir</h2>
+            <section class="kasir">
+                <!-- Kosongkan -->
+            </section>
+        </main>
+
+        <aside id="cart" class="cart">
+            <h2>Keranjang</h2>
+            <div class="cart-item">
+                <ul id="cart-item">
+                    <li>Keranjang Kosong</li>
+                    <!-- Kosongkan -->
+                </ul>
+            </div>
+            <div class="informasi">
+                <p class="total"></p>
+                <div class="buttons">
+                    <button class="btn">Beli</button>
+                    <button id="close-cart" class="btn">Tutup</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Custome Script -->
+    <script src="./js/script.js"></script>
+
+    <!-- FontAwesome Script -->
+    <script src="https://kit.fontawesome.com/ffa3ed8b39.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
